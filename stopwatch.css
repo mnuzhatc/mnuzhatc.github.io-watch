@@ -1,0 +1,99 @@
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'digital_dismayregular';
+    src: url('digital_dismay-webfont.woff2') format('woff2'),
+         url('digital_dismay-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'winkleregular';
+    src: url('winkle-regular-webfont.woff2') format('woff2'),
+         url('winkle-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'adieu_mon_ami_demoregular';
+    src: url('adieu_mon_ami_demo-webfont.woff2') format('woff2'),
+         url('adieu_mon_ami_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+  background-image: url("bggg.jpeg");
+  background-size: cover;
+}
+
+body > h1 {
+  font-family: 'adieu_mon_ami_demoregular';
+  text-align: center;
+  padding-top: 128px;
+  font-size: 50px;
+  color: #55434a;
+}
+.container{
+    background-image: url("clockbg.gif");
+    background-size: cover;
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+.timerDisplay{
+    position: relative;
+    width: 80%;
+    background: #ffffff;
+    left:8%;
+    right: 10%;
+    padding: 10px ;
+    font-family: 'digital_dismayregular';
+    color: #fdaacd;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(39, 6, 58, 0.25);
+}
+.buttons{
+    width: 90%;
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.buttons button{
+    width: 120px;
+    height: 45px;
+    background-color: #c8b0e4;
+    color: #ffffff;
+    border: none;
+    font-family: 'winkleregular';
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.buttons button:nth-last-child(2){
+  background-color: #ffbeb3;
+}
+.buttons button:nth-last-child(1){
+  background-color: #c8b0e4;
+}
